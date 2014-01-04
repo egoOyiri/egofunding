@@ -3,7 +3,7 @@ egofunding
 
 Crowfunding WebSite for Ego Oyiri Project
 
-## _spray_ Template Project
+## _Crowd Funding_ Template Project
 
 Follow these steps to get started:
 
