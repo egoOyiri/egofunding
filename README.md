@@ -35,7 +35,7 @@ Follow these steps to get started:
 
 8. Learn more at http://akka.io and http://spray.io/
 
-9. Start hacking on `src/main/scala/org/egooyiri/MyService.scala`
+9. Start hacking on `src/main/scala/org/egooyiri/EOService.scala`
 
 ## _Eclipse_ Integration
 
@@ -45,4 +45,4 @@ Follow these steps to get started:
 
 2. Test in Eclipse:
 
-         In Eclipse run MyServiceSpec as JUnit or Scala Tests
+         In Eclipse run EOServiceSpec as JUnit or Scala Tests
