@@ -11,3 +11,9 @@ project/plugins/project/
 
 # Scala-IDE specific
 .scala_dependencies
+
+# ECLIPSE specific
+.classpath
+.project
+.settings/*
+.cache
