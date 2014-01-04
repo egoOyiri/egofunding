@@ -37,3 +37,12 @@ Follow these steps to get started:
 
 9. Start hacking on `src/main/scala/org/egooyiri/MyService.scala`
 
+## _Eclipse_ Integration
+
+1. Launch SBT with eclipse argument:
+
+         $ sbt eclipse
+
+2. Test in Eclipse:
+
+         In Eclipse run MyServiceSpec as JUnit or Scala Tests
