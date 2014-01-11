@@ -61,6 +61,6 @@ Follow these steps to deploy:
 
 3. test:
         
-         * in your favorite browser paste the URL _http://localhost:8080_
+         * in your favorite browser paste the URL http://localhost:8080
          
-         * stop testing _http://localhost:8080/stop?method=post_
+         * stop testing http://localhost:8080/stop?method=post
