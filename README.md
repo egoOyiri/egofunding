@@ -64,3 +64,5 @@ Follow these steps to deploy:
          * in your favorite browser paste the URL http://localhost:8080
          
          * stop testing http://localhost:8080/stop?method=post
+
+         $ curl -v http://localhost:8080/stop?method=post
