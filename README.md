@@ -46,3 +46,21 @@ Follow these steps to get started:
 2. Test in Eclipse:
 
          In Eclipse run EOServiceSpec as JUnit or Scala Tests
+
+## Deployment
+
+Follow these steps to deploy:
+
+1. Generate the Über-jar file:
+
+         $ sbt assembly
+
+2. run:
+ 
+         $  java -jar target/scala-2.10/egofunding-assembly-0.1.jar
+
+3. test:
+        
+         * in your favorite browser paste the URL _http://localhost:8080_
+         
+         * stop testing _http://localhost:8080/stop?method=post_

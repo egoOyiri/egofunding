@@ -26,11 +26,11 @@ class MyServiceSpec extends Specification with Specs2RouteTest with EOService {
       }
     }
 
-    "return a MethodNotAllowed error for PUT requests to the root path" in {
-      Put() ~> sealRoute(eoRoute) ~> check {
-        status === MethodNotAllowed
-        responseAs[String] === "HTTP method not allowed, supported methods: GET"
-      }
-    }
+//    "return a MethodNotAllowed error for PUT requests to the root path" in {
+//      Put() ~> sealRoute(eoRoute) ~> check {
+//        status === MethodNotAllowed
+//        responseAs[String] === "HTTP method not allowed, supported methods: GET"
+//      }
+//    }
   }
 }
