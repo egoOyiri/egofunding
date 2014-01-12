@@ -24,15 +24,11 @@ trait EOService extends HttpService {
       pathSingleSlash {
         complete(prime)
       } ~
+      path("money") {
+        getFromResource("web/money.html")
+      } ~ 
       path("ping") {
         complete("PONG!")
-      }
-    } ~
-    (post | parameter('method ! "post")) {
-      path("stop") {
-        complete {
-          "Shutting down in 1 second..."
-        }
       }
     }
   }
@@ -44,7 +40,7 @@ trait EOService extends HttpService {
         <p>Defined resources:</p>
         <ul>
           <li><a href="/ping">/ping</a></li>
-          <li><a href="/stop?method=post">/stop</a></li>
+          <li><a href="/money">/money</a></li>
         </ul>
       </body>
     </html>

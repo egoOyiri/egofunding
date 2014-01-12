@@ -36,9 +36,9 @@ class EOServiceActor extends Actor with EOService with DemoService {
   // or timeout handling
   def receive = {
     case OperationAck(id: Long) =>
-      context.become(eoRouteBehavior)
-    case _   => 
       context.become(demoRouteBehavior)
+    case _   => 
+      context.become(eoRouteBehavior)
   }
   
   // this is where you can expand your own behaviors  
