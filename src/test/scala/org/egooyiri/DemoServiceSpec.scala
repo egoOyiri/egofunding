@@ -9,19 +9,19 @@ import org.junit.runner._
 import org.specs2.runner.JUnitRunner
 
 @RunWith(classOf[JUnitRunner])
-class MyServiceSpec extends Specification with Specs2RouteTest with EOService {
+class DemoServiceSpec extends Specification with Specs2RouteTest with DemoService {
   def actorRefFactory = system
   
   "MyService" should {
 
     "return a greeting for GET requests to the root path" in {
-      Get() ~> eoRoute ~> check {
-        responseAs[String] must contain("Say Manao Ahaona")
+      Get() ~> demoRoute ~> check {
+        responseAs[String] must contain("Say Hello")
       }
     }
 
     "leave GET requests to other paths unhandled" in {
-      Get("/kermit") ~> eoRoute ~> check {
+      Get("/kermit") ~> demoRoute ~> check {
         handled must beFalse
       }
     }
@@ -34,4 +34,3 @@ class MyServiceSpec extends Specification with Specs2RouteTest with EOService {
 //    }
   }
 }
-  
