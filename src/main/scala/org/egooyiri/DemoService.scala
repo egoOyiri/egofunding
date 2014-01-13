@@ -49,7 +49,7 @@ trait DemoService extends HttpService {
       } ~
       path("stats") {
         complete {
-          actorRefFactory.actorFor("/user/IO-HTTP/listener-0")
+          actorRefFactory.actorSelection("/user/IO-HTTP/listener-0")
             .ask(Http.GetStats)(1.second)
             .mapTo[Stats]
         }
