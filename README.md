@@ -47,6 +47,16 @@ Follow these steps to get started:
 
          In Eclipse run EOServiceSpec as JUnit or Scala Tests
 
+## _IDEA_ Integration
+
+1. Launch SBT with IDEA argument:
+
+         $ sbt gen-idea
+
+2. Test in IDEA:
+
+         In IDEA simply run EOServiceSpec 
+
 ## Deployment
 
 Follow these steps to deploy:

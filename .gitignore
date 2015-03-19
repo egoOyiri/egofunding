@@ -17,3 +17,9 @@ project/plugins/project/
 .project
 .settings/*
 .cache
+
+# IDEA specific
+.idea/
+.idea_modules/
+projectFilesBackup/
+
